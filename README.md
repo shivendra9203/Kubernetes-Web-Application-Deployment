@@ -59,8 +59,10 @@ The repository includes the following Kubernetes configuration files:
 ### 1. Clone the Repository:
 
 ```bash
+
 git clone https://github.com/shivendra9203/Kubernetes-Web-Application-Deployment.git
 cd <repository-directory>
+
 ```
 
 ### 2. Apply Kubernetes Configurations
@@ -68,6 +70,7 @@ cd <repository-directory>
 Apply all YAML files to your Kubernetes cluster in the following order to ensure dependencies are met:
 
 ```bash
+
 kubectl apply -f mysql-pv.yaml
 kubectl apply -f mysql-pvc.yaml
 kubectl apply -f mysql-configmap.yaml
@@ -79,14 +82,17 @@ kubectl apply -f backend-service.yaml
 kubectl apply -f frontend-deployment.yaml
 kubectl apply -f frontend-service.yaml
 kubectl apply -f ingress.yaml
+
 ```
 
 ### 3. Verify Deployments
 
 ```bash
+
 kubectl get pods -n default
 kubectl get services -n default
 kubectl get ingress -n default
+
 ```
 
 ### 4. Configure DNS
@@ -94,7 +100,9 @@ kubectl get ingress -n default
 Update your domain (`shivendra.rocks`) to point to the Ingress controller’s external IP. Retrieve the IP using:
 
 ```bash
+
 kubectl get ingress app-ingress -n default
+
 ```
 
 ### 5. Access the Application:
