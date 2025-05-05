@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: shiv9203/nginx:v2
+        image: shiv9203/nginx:v2 ## (Enter Your Image name , If you try it you can use my image)
         ports:
         - containerPort: 80
