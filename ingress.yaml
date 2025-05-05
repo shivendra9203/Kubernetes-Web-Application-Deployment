@@ -9,7 +9,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: shivendra.rocks
+  - host: (Enter your Domain name)
     http:
       paths:
       - path: /student
