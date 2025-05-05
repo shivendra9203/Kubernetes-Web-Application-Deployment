@@ -4,6 +4,6 @@ metadata:
   name: mysql-config
   namespace: default
 data:
-  MYSQL_DATABASE: "mydb"
-  MYSQL_USER: "mca_user"
-  MYSQL_HOST: "mysql"
+  MYSQL_DATABASE: "" ## (Enter Your Databases Name)
+  MYSQL_USER: ""  ## ( Enter Your Username)
+  MYSQL_HOST: ""  ## (Enter YOur Password)
