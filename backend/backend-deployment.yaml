@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: shiv9203/my-tomcat:v2
+        image: shiv9203/my-tomcat:v2  ## (If You use our image Replace this place)
         ports:
         - containerPort: 5000
         env:
